@@ -1,0 +1,184 @@
+<body>
+  <navbar id="navbar">
+    <logo id='nav-logo'>
+      <h3>
+        <a href="#welcome-section">Stonkus.lt</a>
+      </h3>
+    </logo>
+    <nav-links id='nav-links'>
+      <a href="#welcome-section">About</a>
+      <a href="#project-section">Projects</a>
+      <a href="#contact-section">Contact</a>
+    </nav-links>
+  </navbar>
+  
+  <section id="welcome-section">
+    <div class="welcome-container">
+      <h1>Hey I am Valdas</h1>
+      <img id="valdas-pic"
+      src="src\valdas_stonkus_300px.jpg" 
+      alt="Valdas Stonkus' face in a beautiful panorama">
+      <h2>a Full Stack developer</h2>
+    </div>
+  </section>
+  
+  <section id="project-section">
+    <h1 id="projects-section-title">These are some of my projects</h1>
+    <!-- <a id="profile-link" href="https://github.com/MrStonkus" target="_blank">GitHub</a> -->
+    <div class="cards-container">
+
+      <div class="project-card">
+        <div class="card-title">Doze calculator</div>
+        <div class="card-body">
+          This calculator takes the medicines and calculate drugs dozes by weekly dose amount. Basically it help peoples who using INR (blood thickness) monitoring.
+          <a href="https://github.com/MrStonkus/doze-calculator" target="_blank">GitHub</a>
+        </div>
+          <img src="src\doze-calculator.png" alt="To do aplication with 3 open and 1 compleated tasks.">
+
+      </div>
+    
+      <div class="project-card">
+        <div class="card-title">Quasar To-Do</div>
+        <div class="card-body">
+          Simple To-Do app for testing Vue and Quasar frameworks.
+          <a href="https://stonkus.lt/projects/to-do/#/" target="_blank">Demo</a>
+          <a href="https://github.com/MrStonkus/quasar-todo" target="_blank">GitHub</a>
+        </div>
+        <img src="src\to-do.png" alt="To do aplication with 3 open and 1 compleated tasks.">
+      </div>
+      
+      <div class="project-card">
+        <div class="card-title">INR-app</div>
+        <div class="card-body">This app will help peoples to monitor they INR (blood thickness) and keep all activities and reminders in one place.
+          <a href="https://stonkus.lt/projects/inr/#/" target="_blank">Demo</a>
+          <a href="https://github.com/MrStonkus/inr-app" target="_blank">GitHub</a>
+        </div>
+        <img src="src\inr-app.png" alt="To do aplication with 3 open and 1 compleated tasks.">
+      </div>
+    
+    </div>
+  </section>
+
+  <section id="contact-section">
+    <h1>I am open to your suggestions</h1>
+    <div>
+      <p>Call me +370-600-800-84</p>
+      <p>E-mail: valdas@stonkus.lt</p>
+
+    </div>
+  </section>
+
+</body>
+<style>
+    body {
+  width: 100%;
+  margin: 0px;
+}
+
+#navbar {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  background-color: #080892;
+  top: 0;
+  left: 0;
+  height: 80px;
+  width: 100%;
+  box-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+}
+#nav-logo {
+  margin-left: 20px;
+  
+}
+#nav-links {
+  display: flex;
+
+}
+#navbar a {
+  color: rgb(211, 211, 211);
+  align-self: center;
+  margin-right: 60px;
+  font-size: 1.8em;
+  text-decoration: none;
+}
+#welcome-section {
+  height: 100vh;
+  color: 000066;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center; /* Vertical center alignment */
+  justify-content: center; /*Horizontal center alignment */
+  flex-direction: column;
+  text-align: center;
+}
+  
+
+#welcome-section h1 {
+  font-size: 5em;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  /*Big smartphones [426px -> 600px]*/
+  #welcome-section h1 {
+    font-size: 3em;
+  }
+}
+
+#valdas-pic {
+  border-radius: 50px;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+#project-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /*Horizontal center alignment */
+}
+
+#projects-section-title {
+  text-align: center;
+}
+
+.cards-container {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-around;
+  
+  
+}
+
+.project-card {
+  width: 30%;
+  min-height: 300px;
+  background-color: rgb(214, 216, 255);
+  /* border: 2px solid blue; */
+  border-radius: 5px;
+  
+}
+
+.card-title {
+  padding: 10px;
+  font-weight: bold;
+  
+}
+
+.card-body {
+  padding: 5px;
+  /* border: 1px solid; */
+}
+
+.project-card img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+  padding: 5px;
+}
+
+#contact-section {
+  text-align: center;
+}
+
+</style>
