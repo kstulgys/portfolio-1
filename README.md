@@ -1,2 +1,3 @@
-# portfolio
-This is my personal portfolio. Made from scratch without any library or framework. Just HTML and CSS
+# portfolio black_variant
+
+It will be new portfolio variant.
