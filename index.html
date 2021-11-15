@@ -20,7 +20,8 @@
 <body>
   <div class="container-fluid p-0">
 
-    <nav class="autohide navbar navbar-expand-sm navbar-light bg-white shadow  border p-1">
+    <!-- <navbar id="navbar" class="autohide navbar navbar-expand-sm navbar-light bg-white shadow  border p-1"> -->
+    <navbar id="navbar" class="autohide navbar navbar-expand-sm navbar-light bg-white shadow  border p-1">
       <a class="navbar-brand mb-0 ml-3" href="./index.html">
         <h4>STONKUS.LT</h4>
       </a>
@@ -33,6 +34,7 @@
       <div class="collapse navbar-collapse" id="main_nav">
         <ul class="nav navbar-nav ml-auto mr-3 mt-lg-0">
 
+
           <li class="nav-item active">
             <a href="#welcome-section" class="nav-link" role="navigation" data-bs-toggle="collapse"
               data-target=".navbar-collapse.show">
@@ -40,7 +42,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#project-section" role="navigation" data-bs-toggle="collapse" data-target=".navbar-collapse.show"
+            <a href="#projects" role="navigation" data-bs-toggle="collapse" data-target=".navbar-collapse.show"
               class="nav-link">
               <h5>Projects</h5>
             </a>
@@ -51,9 +53,15 @@
               <h5>Contact</h5>
             </a>
           </li>
+          <li class="nav-item">
+            <a href="https://github.com/MrStonkus" id="profile-link" target="_blank" class="nav-link" role="navigation"
+              data-bs-toggle="collapse" data-target=".navbar-collapse.show">
+              <i class="bi bi-github"></i>
+            </a>
+          </li>
         </ul>
       </div>
-    </nav>
+    </navbar>
 
     <div id="welcome-section" class="container">
       <h1>Hey I am Valdas</h1>
@@ -64,9 +72,9 @@
 
 
     <!-- ---Project sections start-------------------------------------------------------->
-    <div id="project-section" class="container-fluid bg-light" style="padding-top: 60px;">
+    <section id="projects" class="container-fluid bg-light" style="padding-top: 60px;">
 
-      <h1 class="text-center mb-4">These are some of my works</h1>
+      <h1 class="project-tile text-center mb-4">These are some of my works</h1>
       <div class="card-columns">
 
         <div class="card p-3">
@@ -195,7 +203,7 @@
 
 
       </div>
-    </div>
+    </section>
   </div>
   <!-- ---Project sections end-------------------------------------------------------->
 
@@ -232,12 +240,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
   </script>
-
-  <p>This is another paragraph.</p>
-
-  <button>Click me to hide paragraphs</button>
-
-
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
 </html>
@@ -314,14 +317,9 @@
           el_autohide.classList.add('scrolled-down');
         }
         last_scroll_top = scroll_top;
-      }); // window.addEventListener 
-    } // if
-  }); // DOMContentLoaded end
-
-  // $(document).ready(function () {
-  //   $("#hey").addClass("animated fadeOut");
-
-  // });
+      });
+    }
+  });
 
   $(document).ready(function () {
     $("button").click(function () {
